@@ -166,7 +166,7 @@ export const NFTProvider = ({ children }) => {
 
     // Replace with your own RPC endpoint
     const provider = new ethers.JsonRpcProvider(
-      'https://eth-sepolia.g.alchemy.com/v2/0Hy758w6BteirxoloAs_K_vgQhMZuCIc'
+      'https://testnet.bitfinity.network'
     );
     const contract = fetchContract(provider);
 
