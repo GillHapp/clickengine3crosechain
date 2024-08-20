@@ -299,7 +299,7 @@ export const GameProvider = ({ children }) => {
 
     try {
       const provider = new ethers.JsonRpcProvider(
-        'https://testnet.bitfinity.network'
+        'https://eth-sepolia.g.alchemy.com/v2/0Hy758w6BteirxoloAs_K_vgQhMZuCIc'
       );
 
       const contract = fetchContract(provider);

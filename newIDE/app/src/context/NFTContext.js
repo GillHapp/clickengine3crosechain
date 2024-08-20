@@ -166,7 +166,7 @@ export const NFTProvider = ({ children }) => {
 
     // Replace with your own RPC endpoint
     const provider = new ethers.JsonRpcProvider(
-      'https://testnet.bitfinity.network'
+      'https://eth-sepolia.g.alchemy.com/v2/0Hy758w6BteirxoloAs_K_vgQhMZuCIc'
     );
     const contract = fetchContract(provider);
 
@@ -328,10 +328,10 @@ export const NFTProvider = ({ children }) => {
     const web3Modal = new Web3Modal();
     const connection = await web3Modal.connect();
     console.log('connection ====>', connection);
-    // const provider = new ethers.JsonRpcProvider(
-    //   'https://eth-sepolia.g.alchemy.com/v2/0Hy758w6BteirxoloAs_K_vgQhMZuCIc'
-    // );
-    const provider = new ethers.BrowserProvider(window.ethereum);
+    const provider = new ethers.JsonRpcProvider(
+      'https://eth-sepolia.g.alchemy.com/v2/0Hy758w6BteirxoloAs_K_vgQhMZuCIc'
+    );
+    // const provider = new ethers.BrowserProvider(window.ethereum);
     const signer = await provider.getSigner();
 
     console.log('provider ====>', provider);
